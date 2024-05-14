@@ -1,5 +1,5 @@
 def encode(message, shift):
-    alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    alphabet = ['A', 'B', 'C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     partialStart = ''
     partialEnd = ''
     shiftedAlphabet = ''
@@ -22,5 +22,5 @@ def encode(message, shift):
     for letter in message:
         letter_index = alphabet.index(letter)
         encodedMessage = encodedMessage + shiftedAlphabet[letter_index]
-       
-    return encodedMessage
+
+    return(encodedMessage)
