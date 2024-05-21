@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-primary: #890504;
     --color-primary-hover: #FF0000;
     --color-primary-dark: #990100;
@@ -10,9 +10,16 @@
 body {
     background: var(--color-background);
     color: var(--color-text);
-    font-family: Roboto;
-    font-size:1.2rem;
-    line-height:1.5rem;
+    font-family: Ubuntu;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.alert {
+    font-size: 1rem;
+    padding: 2px;
+    color: var(--color-text);
+    background-color: var(--color-primary-dark);
 }
 
 .info {
