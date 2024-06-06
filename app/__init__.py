@@ -17,18 +17,18 @@ def create_app():
                 cipher_key = int(request.form['cipher_key'])
             except:
                 cipher_key = 0
-                flash("A chave deve ser um número!")
-
+            
             message = request.form['message']
 
             if cipher_key == 0:
                 flash("A chave deve ser um número!")
             elif not cipher_key:
-                flash('A chave é obrigatoria...')
-            elif not message:
-                flash('A menssage é necessária...')
+                flash('A chave é obrigatória...')
+            elif not message :
+                flash('A mensagem é necessária...')
             else:
-                flash("ENCODE")
+                encoded_message = encode_message(message, int(cipher_key))
+                flash(encoded_message)
 
         return render_template('encode.html',name=name)
     
